@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INK SOUL — Тату-студия</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__logo">INK SOUL</div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">INK SOUL</a>
+      <button class="nav__burger" id="navBurger" aria-label="Меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#styles" class="nav__link">Стили</a></li>
+        <li><a href="#masters" class="nav__link">Мастера</a></li>
+        <li><a href="#process" class="nav__link">Процесс</a></li>
+        <li><a href="#prices" class="nav__link">Цены</a></li>
+        <li><a href="#faq" class="nav__link">FAQ</a></li>
+        <li><a href="#contact" class="nav__link">Контакты</a></li>
+        <li><a href="#" class="nav__cta btn btn--outline" data-modal-open>Записаться</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" id="heroBg"></div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content container">
+        <h1 class="hero__title glitch" data-text="INK SOUL">INK SOUL</h1>
+        <p class="hero__subtitle">Твоя история на коже</p>
+        <button class="btn btn--primary" data-modal-open>Записаться на эскиз</button>
+      </div>
+      <div class="hero__scroll">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- About / Stats -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="about__grid reveal">
+          <div class="about__stat">
+            <span class="about__number" data-target="7">0</span>
+            <span class="about__label">лет на рынке</span>
+          </div>
+          <div class="about__stat">
+            <span class="about__number" data-target="1500">0</span>
+            <span class="about__label">выполненных работ</span>
+          </div>
+          <div class="about__stat">
+            <span class="about__number" data-target="12">0</span>
+            <span class="about__label">наград и призов</span>
+          </div>
+        </div>
+        <p class="about__text reveal">Мы создаём татуировки, которые становятся частью тебя. Каждый эскиз — уникальная история, каждая линия — осознанный выбор.</p>
+      </div>
+    </section>
+
+    <!-- Styles -->
+    <section class="styles section" id="styles">
+      <div class="container">
+        <h2 class="section__title reveal">Стили</h2>
+        <p class="section__subtitle reveal">Выбери направление, которое отражает твою суть</p>
+        <div class="styles__grid">
+          <article class="style-card reveal">
+            <div class="style-card__visual">
+              <img src="https://plus.unsplash.com/premium_photo-1665454931497-1355f79c5f4d?w=600&h=400&fit=crop&q=80" alt="Олд Скул татуировка" loading="lazy">
+            </div>
+            <h3 class="style-card__title">Олд Скул</h3>
+            <p class="style-card__desc">Классика американской татуировки: жирные контуры, яркие цвета и узнаваемые мотивы. Вечный стиль, который не выходит из моды.</p>
+          </article>
+          <article class="style-card reveal">
+            <div class="style-card__visual">
+              <img src="https://plus.unsplash.com/premium_photo-1707086194263-8ae88d647df7?w=600&h=400&fit=crop&q=80" alt="Блэкворк татуировка" loading="lazy">
+            </div>
+            <h3 class="style-card__title">Блэкворк</h3>
+            <p class="style-card__desc">Глубокий чёрный, геометрия и абстракция. Монохромные композиции с мощным визуальным воздействием и чёткими формами.</p>
+          </article>
+          <article class="style-card reveal">
+            <div class="style-card__visual">
+              <img src="https://images.unsplash.com/photo-1540174053853-1cc5d1fa8814?w=600&h=400&fit=crop&q=80" alt="Реализм татуировка" loading="lazy">
+            </div>
+            <h3 class="style-card__title">Реализм</h3>
+            <p class="style-card__desc">Фотореалистичные портреты, природа и детали, переданные с ювелирной точностью. Искусство, которое оживает на коже.</p>
+          </article>
+          <article class="style-card reveal">
+            <div class="style-card__visual">
+              <img src="https://images.unsplash.com/photo-1614174487989-10fc7b5382a9?w=600&h=400&fit=crop&q=80" alt="Минимализм татуировка" loading="lazy">
+            </div>
+            <h3 class="style-card__title">Минимализм</h3>
+            <p class="style-card__desc">Тонкие линии, лаконичные символы и продуманная простота. Меньше — значит больше, когда каждый штрих имеет смысл.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Masters -->
+    <section class="masters section" id="masters">
+      <div class="container">
+        <div class="masters__intro reveal">
+          <span class="masters__tag">Команда</span>
+          <h2 class="section__title">Мастера</h2>
+          <p class="section__subtitle">Три характера — три языка татуировки. Каждый со своей философией и почерком.</p>
+        </div>
+
+        <div class="artists">
+          <article class="artist reveal">
+            <div class="artist__visual">
+              <img
+                class="artist__photo"
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=900&h=1100&fit=crop&q=80"
+                alt="Алексей Коваль — тату-мастер INK SOUL"
+                loading="lazy"
+              >
+              <span class="artist__index">01</span>
+              <div class="artist__frame"></div>
+            </div>
+            <div class="artist__body">
+              <blockquote class="artist__quote">
+                <span class="artist__quote-mark">«</span>
+                Каждая тату — договор между мастером и телом. Я просто перевожу его на язык линий.
+              </blockquote>
+              <div class="artist__info">
+                <h3 class="artist__name">Алексей Коваль</h3>
+                <p class="artist__role">Олд Скул / Неотрадишнл</p>
+                <p class="artist__exp">9 лет · 400+ работ</p>
+              </div>
+              <button class="btn btn--primary btn--sm" data-modal-open data-master="Алексей Коваль">Записаться к мастеру</button>
+            </div>
+          </article>
+
+          <article class="artist artist--reverse reveal">
+            <div class="artist__visual">
+              <img
+                class="artist__photo"
+                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=900&h=1100&fit=crop&q=80"
+                alt="Мария Волкова — тату-мастер INK SOUL"
+                loading="lazy"
+              >
+              <span class="artist__index">02</span>
+              <div class="artist__frame"></div>
+            </div>
+            <div class="artist__body">
+              <blockquote class="artist__quote">
+                <span class="artist__quote-mark">«</span>
+                Тишина — лучший холст. Одна линия может сказать больше, чем целая композиция.
+              </blockquote>
+              <div class="artist__info">
+                <h3 class="artist__name">Мария Волкова</h3>
+                <p class="artist__role">Блэкворк / Минимализм</p>
+                <p class="artist__exp">6 лет · 280+ работ</p>
+              </div>
+              <button class="btn btn--primary btn--sm" data-modal-open data-master="Мария Волкова">Записаться к мастеру</button>
+            </div>
+          </article>
+
+          <article class="artist reveal">
+            <div class="artist__visual">
+              <img
+                class="artist__photo"
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=900&h=1100&fit=crop&q=80"
+                alt="Дмитрий Соколов — тату-мастер INK SOUL"
+                loading="lazy"
+              >
+              <span class="artist__index">03</span>
+              <div class="artist__frame"></div>
+            </div>
+            <div class="artist__body">
+              <blockquote class="artist__quote">
+                <span class="artist__quote-mark">«</span>
+                Кожа не прощает фальши. Реализм — это честность: каждая тень должна дышать.
+              </blockquote>
+              <div class="artist__info">
+                <h3 class="artist__name">Дмитрий Соколов</h3>
+                <p class="artist__role">Реализм / Портреты</p>
+                <p class="artist__exp">11 лет · 520+ работ</p>
+              </div>
+              <button class="btn btn--primary btn--sm" data-modal-open data-master="Дмитрий Соколов">Записаться к мастеру</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="process section" id="process">
+      <div class="container">
+        <h2 class="section__title reveal">Процесс</h2>
+        <p class="section__subtitle reveal">От идеи до готовой татуировки</p>
+        <div class="process__steps">
+          <div class="process__step reveal">
+            <div class="process__icon">01</div>
+            <h3 class="process__name">Идея</h3>
+            <p class="process__desc">Обсуждаем концепцию, референсы и пожелания на консультации</p>
+          </div>
+          <div class="process__arrow reveal">→</div>
+          <div class="process__step reveal">
+            <div class="process__icon">02</div>
+            <h3 class="process__name">Эскиз</h3>
+            <p class="process__desc">Мастер создаёт уникальный эскиз и вносит правки до идеала</p>
+          </div>
+          <div class="process__arrow reveal">→</div>
+          <div class="process__step reveal">
+            <div class="process__icon">03</div>
+            <h3 class="process__name">Сессия</h3>
+            <p class="process__desc">Безопасная и комфортная работа в стерильных условиях</p>
+          </div>
+          <div class="process__arrow reveal">→</div>
+          <div class="process__step reveal">
+            <div class="process__icon">04</div>
+            <h3 class="process__name">Результат</h3>
+            <p class="process__desc">Уход, рекомендации и поддержка на всех этапах заживления</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prices -->
+    <section class="prices section" id="prices">
+      <div class="container">
+        <h2 class="section__title reveal">Цены</h2>
+        <p class="section__subtitle reveal">Прозрачное ценообразование без скрытых доплат</p>
+        <div class="prices__grid">
+          <div class="price-card reveal">
+            <h3 class="price-card__size">Маленькое</h3>
+            <p class="price-card__detail">до 5 см</p>
+            <p class="price-card__price">от <span>3 000</span> ₽</p>
+          </div>
+          <div class="price-card reveal">
+            <h3 class="price-card__size">Среднее</h3>
+            <p class="price-card__detail">5–15 см</p>
+            <p class="price-card__price">от <span>7 000</span> ₽</p>
+          </div>
+          <div class="price-card reveal">
+            <h3 class="price-card__size">Крупное</h3>
+            <p class="price-card__detail">15–30 см</p>
+            <p class="price-card__price">от <span>15 000</span> ₽</p>
+          </div>
+          <div class="price-card price-card--featured reveal">
+            <h3 class="price-card__size">Sleeve</h3>
+            <p class="price-card__detail">рукав / нога</p>
+            <p class="price-card__price">от <span>40 000</span> ₽</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq section" id="faq">
+      <div class="container">
+        <h2 class="section__title reveal">FAQ</h2>
+        <p class="section__subtitle reveal">Ответы на частые вопросы</p>
+        <div class="faq__list">
+          <div class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false">
+              <span>Больно ли делать татуировку?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>Ощущения индивидуальны и зависят от зоны и размера. Большинство клиентов описывают дискомфорт как терпимый. Мы используем качественное оборудование и делаем перерывы при необходимости.</p>
+            </div>
+          </div>
+          <div class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false">
+              <span>Сколько длится заживление?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>Полное заживление занимает 2–4 недели. Первые 7–10 дней — самый важный период. Мы даём подробную инструкцию по уходу и остаёмся на связи.</p>
+            </div>
+          </div>
+          <div class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false">
+              <span>Нужна ли предоплата?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>Для бронирования времени требуется предоплата 30% от стоимости эскиза. Она входит в итоговую цену и возвращается при отмене за 48 часов до сессии.</p>
+            </div>
+          </div>
+          <div class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false">
+              <span>Можно ли принести свой эскиз?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>Да, мы работаем с вашими референсами. Мастер адаптирует дизайн под анатомию и стиль, чтобы результат выглядел идеально на коже.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <h2 class="section__title reveal">Контакты</h2>
+        <div class="contact__grid reveal">
+          <div class="contact__info">
+            <div class="contact__item">
+              <span class="contact__label">Адрес</span>
+              <p>г. Москва, ул. Артиллерийская, 12</p>
+            </div>
+            <div class="contact__item">
+              <span class="contact__label">Телефон</span>
+              <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+            </div>
+            <div class="contact__item">
+              <span class="contact__label">Режим работы</span>
+              <p>Пн–Сб: 11:00 – 21:00</p>
+            </div>
+            <div class="contact__socials">
+              <a href="#" class="social-link" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Telegram">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="VK">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-.563-5.335-2.888-.546-.952-1.029-2.003-1.029-2.003s-.102-.254.102-.39c.203-.136.66-.144 1.017-.144.424 0 1.101.102 1.422.678.508.932 1.354 2.481 1.525 2.786.203.356.339.508.746.508.424 0 1.084-.254 1.084-1.49V9.76c0-.78-.254-1.017-.746-1.186-.203-.068-.17-.39.102-.525.254-.119.847-.254 1.354-.254.932 0 1.354.254 1.354 1.49v3.05c0 .593.102.847.424.847.254 0 .508-.17.932-.78 1.422-2.003 2.447-3.05 2.447-3.05s.254-.17.593-.102c.254.034.593.102.78.424.17.288.17 1.017.17 1.017s-.034.78-.254 1.084c-.203.288-.593.593-1.084 1.084-.424.424-.593.678-.424 1.017.17.339.746 1.186 1.59 1.895.932.78 1.642 1.354 1.846 1.76.203.39.102 1.017-.39 1.354z"/></svg>
+              </a>
+            </div>
+            <button class="btn btn--primary" data-modal-open>Записаться</button>
+          </div>
+          <div class="contact__map reveal">
+            <div class="map">
+              <div class="map__viewport">
+                <svg class="map__svg" viewBox="0 0 600 420" aria-hidden="true">
+                  <defs>
+                    <pattern id="mapGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+                      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+                    </pattern>
+                  </defs>
+                  <rect width="600" height="420" fill="#0c0c0c"/>
+                  <rect width="600" height="420" fill="url(#mapGrid)"/>
+                  <path d="M0 180 H600" stroke="rgba(255,255,255,0.08)" stroke-width="14"/>
+                  <path d="M0 300 H600" stroke="rgba(255,255,255,0.05)" stroke-width="8"/>
+                  <path d="M120 0 V420" stroke="rgba(255,255,255,0.06)" stroke-width="10"/>
+                  <path d="M280 0 V420" stroke="rgba(255,255,255,0.04)" stroke-width="6"/>
+                  <path d="M420 0 V420" stroke="rgba(255,255,255,0.07)" stroke-width="12"/>
+                  <path d="M500 0 V420" stroke="rgba(255,255,255,0.03)" stroke-width="5"/>
+                  <rect x="340" y="130" width="90" height="70" fill="rgba(255,255,255,0.03)" rx="2"/>
+                  <rect x="150" y="220" width="120" height="55" fill="rgba(255,255,255,0.025)" rx="2"/>
+                  <rect x="430" y="250" width="70" height="90" fill="rgba(255,255,255,0.02)" rx="2"/>
+                  <text x="48" y="172" fill="rgba(255,255,255,0.15)" font-size="11" font-family="Inter, sans-serif" letter-spacing="2">АРТИЛЛЕРИЙСКАЯ</text>
+                  <text x="430" y="168" fill="rgba(255,255,255,0.1)" font-size="10" font-family="Inter, sans-serif" letter-spacing="1.5">БАУМАНСКАЯ</text>
+                  <text x="200" y="292" fill="rgba(255,255,255,0.08)" font-size="10" font-family="Inter, sans-serif" letter-spacing="1.5">НИЖНЯЯ КРАСНОСЕЛЬСКАЯ</text>
+                  <circle cx="368" cy="195" r="60" fill="rgba(230,57,70,0.06)"/>
+                  <circle cx="368" cy="195" r="30" fill="rgba(230,57,70,0.1)"/>
+                </svg>
+                <div class="map__pin" style="left: 61.3%; top: 46.4%;">
+                  <span class="map__pin-pulse"></span>
+                  <span class="map__pin-dot"></span>
+                </div>
+                <div class="map__label" style="left: 54%; top: 54%;">INK SOUL</div>
+              </div>
+              <div class="map__panel">
+                <div class="map__panel-head">
+                  <span class="map__panel-tag">Студия</span>
+                  <h3 class="map__panel-title">INK SOUL</h3>
+                </div>
+                <p class="map__panel-address">г. Москва, ул. Артиллерийская, 12</p>
+                <p class="map__panel-metro">м. Бауманская · 7 мин пешком</p>
+                <a
+                  class="map__panel-link"
+                  href="https://www.google.com/maps/search/?api=1&query=55.7721,37.6789"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Построить маршрут
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#" class="footer__logo">INK SOUL</a>
+      <p class="footer__copy">&copy; 2026 INK SOUL. Все права защищены.</p>
+      <nav class="footer__links">
+        <a href="#styles">Стили</a>
+        <a href="#masters">Мастера</a>
+        <a href="#prices">Цены</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__content">
+      <button class="modal__close" data-modal-close aria-label="Закрыть">&times;</button>
+      <h2 class="modal__title">Записаться</h2>
+      <form class="modal__form" id="bookingForm">
+        <div class="form__group">
+          <label for="name">Имя</label>
+          <input type="text" id="name" name="name" required placeholder="Ваше имя">
+        </div>
+        <div class="form__group">
+          <label for="phone">Телефон</label>
+          <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__">
+        </div>
+        <div class="form__group">
+          <label for="style">Стиль тату</label>
+          <select id="style" name="style" required>
+            <option value="" disabled selected>Выберите стиль</option>
+            <option value="old-school">Олд Скул</option>
+            <option value="blackwork">Блэкворк</option>
+            <option value="realism">Реализм</option>
+            <option value="minimalism">Минимализм</option>
+          </select>
+        </div>
+        <div class="form__group" id="masterGroup" style="display:none">
+          <label for="master">Мастер</label>
+          <input type="text" id="master" name="master" readonly>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Отправить</button>
+      </form>
+      <div class="modal__success" id="modalSuccess" hidden>
+        <div class="modal__success-icon">✓</div>
+        <p>Мы свяжемся с тобой в течение часа</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* ── Preloader ── */
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('preloader').classList.add('preloader--hidden');
+        document.body.classList.remove('no-scroll');
+      }, 1500);
+    });
+    document.body.classList.add('no-scroll');
+
+    /* ── Custom Cursor ── */
+    const dot = document.getElementById('cursorDot');
+    const ring = document.getElementById('cursorRing');
+    let mouseX = 0, mouseY = 0;
+    let ringX = 0, ringY = 0;
+
+    document.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      dot.style.left = mouseX + 'px';
+      dot.style.top = mouseY + 'px';
+    });
+
+    function animateRing() {
+      ringX += (mouseX - ringX) * 0.15;
+      ringY += (mouseY - ringY) * 0.15;
+      ring.style.left = ringX + 'px';
+      ring.style.top = ringY + 'px';
+      requestAnimationFrame(animateRing);
+    }
+    animateRing();
+
+    const hoverTargets = document.querySelectorAll('a, button, .style-card, .artist, .faq__question, .social-link, .map__panel-link');
+    hoverTargets.forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        dot.classList.add('cursor-dot--hover');
+        ring.classList.add('cursor-ring--hover');
+      });
+      el.addEventListener('mouseleave', () => {
+        dot.classList.remove('cursor-dot--hover');
+        ring.classList.remove('cursor-ring--hover');
+      });
+    });
+
+    /* ── Header scroll ── */
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('header--scrolled', window.scrollY > 50);
+    });
+
+    /* ── Mobile nav ── */
+    const burger = document.getElementById('navBurger');
+    const navMenu = document.getElementById('navMenu');
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('nav__burger--active');
+      navMenu.classList.toggle('nav__menu--open');
+    });
+    navMenu.querySelectorAll('.nav__link').forEach(link => {
+      link.addEventListener('click', () => {
+        burger.classList.remove('nav__burger--active');
+        navMenu.classList.remove('nav__menu--open');
+      });
+    });
+
+    /* ── Hero Parallax ── */
+    const heroBg = document.getElementById('heroBg');
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY;
+      if (scrolled < window.innerHeight) {
+        heroBg.style.transform = `translateY(${scrolled * 0.4}px)`;
+      }
+    });
+
+    /* ── Scroll Reveal ── */
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('reveal--visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    /* ── Animated Counters ── */
+    const counters = document.querySelectorAll('.about__number');
+    let countersAnimated = false;
+
+    function animateCounter(el) {
+      const target = parseInt(el.dataset.target, 10);
+      const duration = 2000;
+      const start = performance.now();
+
+      function update(now) {
+        const progress = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.floor(eased * target);
+        if (progress < 1) requestAnimationFrame(update);
+        else el.textContent = target;
+      }
+      requestAnimationFrame(update);
+    }
+
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !countersAnimated) {
+          countersAnimated = true;
+          counters.forEach(c => animateCounter(c));
+        }
+      });
+    }, { threshold: 0.5 });
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) counterObserver.observe(aboutSection);
+
+    /* ── FAQ Accordion ── */
+    document.querySelectorAll('.faq__item').forEach(item => {
+      const btn = item.querySelector('.faq__question');
+      const answer = item.querySelector('.faq__answer');
+
+      btn.addEventListener('click', () => {
+        const isOpen = item.classList.contains('faq__item--open');
+
+        document.querySelectorAll('.faq__item--open').forEach(openItem => {
+          openItem.classList.remove('faq__item--open');
+          openItem.querySelector('.faq__question').setAttribute('aria-expanded', 'false');
+          openItem.querySelector('.faq__answer').style.maxHeight = '0';
+        });
+
+        if (!isOpen) {
+          item.classList.add('faq__item--open');
+          btn.setAttribute('aria-expanded', 'true');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+
+    /* ── Modal ── */
+    const modal = document.getElementById('modal');
+    const form = document.getElementById('bookingForm');
+    const success = document.getElementById('modalSuccess');
+    const masterGroup = document.getElementById('masterGroup');
+    const masterInput = document.getElementById('master');
+
+    function openModal(masterName) {
+      modal.classList.add('modal--open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('no-scroll');
+      form.hidden = false;
+      success.hidden = true;
+
+      if (masterName) {
+        masterGroup.style.display = 'block';
+        masterInput.value = masterName;
+      } else {
+        masterGroup.style.display = 'none';
+        masterInput.value = '';
+      }
+    }
+
+    function closeModal() {
+      modal.classList.remove('modal--open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('no-scroll');
+      form.reset();
+    }
+
+    document.querySelectorAll('[data-modal-open]').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        openModal(btn.dataset.master || null);
+      });
+    });
+
+    document.querySelectorAll('[data-modal-close]').forEach(el => {
+      el.addEventListener('click', closeModal);
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.classList.contains('modal--open')) closeModal();
+    });
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      form.hidden = true;
+      success.hidden = false;
+      setTimeout(closeModal, 3000);
+    });
+  </script>
+
+</body>
+</html>
